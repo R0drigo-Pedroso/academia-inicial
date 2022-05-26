@@ -59,3 +59,16 @@
       display: none;
     }
   }
+
+  /* Reescrevendo a class do color booststrap */
+
+  .btn-primary {
+    background-color: blue !important;
+    border: none !important;
+  }
+
+  .btn-primary:hover {
+    background:whitesmoke !important;
+    color: black !important;
+
+  }
