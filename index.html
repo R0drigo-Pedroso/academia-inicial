@@ -181,7 +181,30 @@
         </div>
       </div>
 
+      <!-- Video -->
+      <section id="videoback">
 
+        <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+        <!-- Fundo black -->
+        <div class="overlay"></div>
+      
+        <!-- The HTML5 video element that will create the background video on the header -->
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="videos/video-academia.mp4" type="video/mp4">
+        </video>
+      
+        <!-- The header content -->
+        <!-- Camada de cima do video -->
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3">COMEÇE HOJE!</h1>
+              <p class="lead mb-0">Na A-CADEMIA você vai encontrar suporte para escolher a atividade ideial para você.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Final video -->
 
       <!-- CTA -->
       <section class="container-fluid bg-dark text-light py-3 text-center">
@@ -194,10 +217,14 @@
               </div>
           </div>
       </section>
+      <!-- Final CTA -->
 
+      <!-- Maps Google -->
+        <section class="container-fluid px-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197490294408!2d-46.65868298443635!3d-23.56134956747826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1653573461377!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
       <!-- Formulario -->
-
       <section id="contato" class="container mt-5 pt-5">
           <div class="row">
               <div class="col-10 offset-2">
@@ -208,15 +235,31 @@
                 <form class="row g-3">
                     <div class="col-md-4">
                       <label for="inputEmail4" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="inputEmail4">
+
+                      <!-- Colocar icon dentro do input -->
+                      <div class="input-group">
+                          <div class="input-group-text"><i class="bi bi-person"></i></div>                  
+                        <input type="text" class="form-control" id="inputEmail4">
+                      </div>
+                      <!-- Final do icon input -->
                     </div>
+                    
                     <div class="col-md-4">
                       <label for="inputPassword4" class="form-label">E-mail</label>
-                      <input type="text" class="form-control" id="inputEmail4">
+
+                      <div class="input-group">
+                          <div class="input-group-text"><i class="bi bi-envelope-paper"></i></div>
+                        <input type="text" class="form-control" id="inputEmail4">
+                      </div>
                     </div>
+                    
                     <div class="col-md-4">
                         <label for="inputPassword4" class="form-label">Fone</label>
+
+                        <div class="input-group">
+                          <div class="input-group-text"><i class="bi bi-phone"></i></div>
                         <input type="tel" class="form-control" id="inputPassword4" placeholder="DDD + Fone">
+                        </div>
                       </div>
 
                     <div class="col-12">
@@ -232,6 +275,7 @@
               </div>
           </div>
       </section>
+      <!-- final Formulario -->
 
       <!-- Footer -->
       <div class="container-fluid bg-dark text-light mt-5">
